@@ -3,6 +3,7 @@
 #include "appstate.h"
 #include "dataref.h"
 #include "plugins-menu.h"
+#include "profiles/cl650-pdc-profile.h"
 #include "profiles/ff767-pdc-profile.h"
 #include "profiles/ff777-pdc-profile.h"
 #include "profiles/fps748-pdc-profile.h"
@@ -111,6 +112,9 @@ void ProductPDC::setProfileForCurrentAircraft() {
         profileReady = true;
     } else if (FF777PDCProfile::IsEligible()) {
         profile = new FF777PDCProfile(this);
+        profileReady = true;
+    } else if (CL650PDCProfile::IsEligible()) {
+        profile = new CL650PDCProfile(this);
         profileReady = true;
     } else {
         profile = nullptr;
