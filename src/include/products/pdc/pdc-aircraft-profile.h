@@ -17,7 +17,8 @@ enum class PDCDatarefType : unsigned char {
     SET_VALUE_MOMENTARY,      // Sets value on CommandBegin, 0 on CommandEnd
     ADD_MINIMUMS_REPEATING,
     ADD_BARO_REPEATING,
-    ADD_RANGE_REPEATING
+    ADD_RANGE_REPEATING,
+    TOGGLE_VALUE // Flips 0/1 on CommandBegin
 };
 
 struct PDCButtonDef {
