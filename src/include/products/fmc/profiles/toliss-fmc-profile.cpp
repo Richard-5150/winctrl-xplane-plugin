@@ -439,6 +439,8 @@ void TolissFMCProfile::mapCharacter(std::vector<uint8_t> *buffer, uint8_t charac
         case 30: // Up arrow
             if (isFontSmall) {
                 buffer->insert(buffer->end(), FMCSpecialCharacter::ARROW_UP.begin(), FMCSpecialCharacter::ARROW_UP.end());
+            } else {
+                buffer->push_back(' ');
             }
             break;
 
@@ -446,7 +448,7 @@ void TolissFMCProfile::mapCharacter(std::vector<uint8_t> *buffer, uint8_t charac
             if (isFontSmall) {
                 buffer->insert(buffer->end(), FMCSpecialCharacter::ARROW_DOWN.begin(), FMCSpecialCharacter::ARROW_DOWN.end());
             } else {
-                buffer->push_back(character);
+                buffer->push_back(' ');
             }
             break;
 
@@ -459,6 +461,12 @@ void TolissFMCProfile::mapCharacter(std::vector<uint8_t> *buffer, uint8_t charac
             break;
 
         default:
+            // No glyph outside printable ASCII; a raw byte there breaks the device's UTF-8 stream (e.g. CPDLC free text).
+            if (character < 0x20 || character >= 0x7F) {
+                buffer->push_back(' ');
+                break;
+            }
+
             buffer->push_back(character);
             break;
     }
