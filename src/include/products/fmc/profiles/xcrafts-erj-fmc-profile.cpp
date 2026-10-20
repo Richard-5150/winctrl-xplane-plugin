@@ -185,18 +185,13 @@ void XCraftsErjFMCProfile::mapCharacter(std::vector<uint8_t> *buffer, uint8_t ch
             buffer->insert(buffer->end(), FMCSpecialCharacter::FILLED_TRIANGLE_RIGHT.begin(), FMCSpecialCharacter::FILLED_TRIANGLE_RIGHT.end());
             break;
 
+        // Every cell must emit a glyph, an empty one shifts the rest of the stream
         case 30:
-            if (isFontSmall) {
-                buffer->insert(buffer->end(), FMCSpecialCharacter::ARROW_UP.begin(), FMCSpecialCharacter::ARROW_UP.end());
-            }
+            buffer->insert(buffer->end(), FMCSpecialCharacter::ARROW_UP.begin(), FMCSpecialCharacter::ARROW_UP.end());
             break;
 
         case 31:
-            if (isFontSmall) {
-                buffer->insert(buffer->end(), FMCSpecialCharacter::ARROW_DOWN.begin(), FMCSpecialCharacter::ARROW_DOWN.end());
-            } else {
-                buffer->push_back(character);
-            }
+            buffer->insert(buffer->end(), FMCSpecialCharacter::ARROW_DOWN.begin(), FMCSpecialCharacter::ARROW_DOWN.end());
             break;
 
         case '`':
