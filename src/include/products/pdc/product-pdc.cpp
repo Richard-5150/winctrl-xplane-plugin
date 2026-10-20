@@ -3,6 +3,7 @@
 #include "appstate.h"
 #include "dataref.h"
 #include "plugins-menu.h"
+#include "profiles/ff767-pdc-profile.h"
 #include "profiles/ff777-pdc-profile.h"
 #include "profiles/fps748-pdc-profile.h"
 #include "profiles/xcrafts-ejets-pdc-profile.h"
@@ -104,6 +105,9 @@ void ProductPDC::setProfileForCurrentAircraft() {
         profileReady = true;
     } else if (ZiboPDCProfile::IsEligible()) {
         profile = new ZiboPDCProfile(this);
+        profileReady = true;
+    } else if (FF767PDCProfile::IsEligible()) {
+        profile = new FF767PDCProfile(this);
         profileReady = true;
     } else if (FF777PDCProfile::IsEligible()) {
         profile = new FF777PDCProfile(this);
