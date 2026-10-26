@@ -71,7 +71,7 @@ const std::vector<FMCButtonDef> &XCraftsErjFMCProfile::buttonDefs() const {
                         {FMCKey::LSK4R, "sim/FMS/ls_4r"},
                         {FMCKey::LSK5R, "sim/FMS/ls_5r"},
                         {FMCKey::LSK6R, "sim/FMS/ls_6r"},
-                        {FMCKey::MCDU_DIR, "sim/FMS/dir_intc"},
+                        {std::vector<FMCKey>{FMCKey::MCDU_DIR, FMCKey::PFP_FIX}, "sim/FMS/dir_intc"},
                         {FMCKey::PROG, "sim/FMS/prog"},
                         {std::vector<FMCKey>{FMCKey::MCDU_PERF, FMCKey::PFP3_N1_LIMIT}, "sim/FMS/clb"},
                         {std::vector<FMCKey>{FMCKey::MCDU_INIT, FMCKey::PFP_INIT_REF}, "sim/FMS/index"},
