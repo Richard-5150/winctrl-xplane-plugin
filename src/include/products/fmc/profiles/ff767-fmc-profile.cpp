@@ -35,6 +35,13 @@ FlightFactor767FMCProfile::FlightFactor767FMCProfile(ProductFMC *product) : FMCA
         product->setLedBrightness(FMCLed::MCDU_MCDU, message ? 1 : 0);
     },
         this);
+
+    Dataref::getInstance()->monitorExistingDataref<float>("war/main/76", [product](float exec) {
+        bool enabled = exec > 0.5f;
+        product->setLedBrightness(FMCLed::PFP_EXEC, enabled ? 1 : 0);
+        product->setLedBrightness(FMCLed::MCDU_STATUS, enabled ? 1 : 0);
+    },
+        this);
 }
 
 bool FlightFactor767FMCProfile::IsEligible() {
