@@ -6,6 +6,7 @@
 #include "pap3-mcp-lcd-segments.h"
 #include "plugins-menu.h"
 #include "profiles/b58-pap3-mcp-profile.h"
+#include "profiles/ff767-pap3-mcp-profile.h"
 #include "profiles/ff777-pap3-mcp-profile.h"
 #include "profiles/fps748-pap3-mcp-profile.h"
 #include "profiles/laminar-737-pap3-mcp-profile.h"
@@ -66,6 +67,9 @@ void ProductPAP3MCP::setProfileForCurrentAircraft() {
         profileReady = true;
     } else if (FF777PAP3MCPProfile::IsEligible()) {
         profile = new FF777PAP3MCPProfile(this);
+        profileReady = true;
+    } else if (FF767PAP3MCPProfile::IsEligible()) {
+        profile = new FF767PAP3MCPProfile(this);
         profileReady = true;
     } else if (RotateMD11PAP3MCPProfile::IsEligible()) {
         profile = new RotateMD11PAP3MCPProfile(this);

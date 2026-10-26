@@ -220,8 +220,10 @@
 		F6BB757B2E32634700C2B21F /* toliss-fcu-efis-profile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6BB75722E32634700C2B21F /* toliss-fcu-efis-profile.cpp */; };
 		F6BBFF082ED741B900FE9D7F /* rotatemd11-pap3-mcp-profile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6BBFF072ED741B900FE9D7F /* rotatemd11-pap3-mcp-profile.cpp */; };
 		F6BBFF092ED741B900FE9D7F /* ff777-pap3-mcp-profile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6BBFF052ED741B900FE9D7F /* ff777-pap3-mcp-profile.cpp */; };
+		F65B07938A2ADEA3C48CBBD7 /* ff767-pap3-mcp-profile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F60E9983B54D333484917318 /* ff767-pap3-mcp-profile.cpp */; };
 		F6BBFF0A2ED741B900FE9D7F /* rotatemd11-pap3-mcp-profile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6BBFF072ED741B900FE9D7F /* rotatemd11-pap3-mcp-profile.cpp */; };
 		F6BBFF0B2ED741B900FE9D7F /* ff777-pap3-mcp-profile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6BBFF052ED741B900FE9D7F /* ff777-pap3-mcp-profile.cpp */; };
+		F66BFAE358660DF36E805A4C /* ff767-pap3-mcp-profile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F60E9983B54D333484917318 /* ff767-pap3-mcp-profile.cpp */; };
 		F6C2086A2FC9702A006973EE /* rotatemd11-fcu-efis-profile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6C208692FC9702A006973EE /* rotatemd11-fcu-efis-profile.cpp */; };
 		F6C2086B2FC9702A006973EE /* rotatemd11-fcu-efis-profile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6C208692FC9702A006973EE /* rotatemd11-fcu-efis-profile.cpp */; };
 		F6C248462EBE498500617E89 /* plugins-menu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6C248452EBE498500617E89 /* plugins-menu.cpp */; };
@@ -507,6 +509,8 @@
 		F6BB75762E32634700C2B21F /* product-fcu-efis.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "product-fcu-efis.cpp"; sourceTree = "<group>"; };
 		F6BBFF042ED741B900FE9D7F /* ff777-pap3-mcp-profile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ff777-pap3-mcp-profile.h"; sourceTree = "<group>"; };
 		F6BBFF052ED741B900FE9D7F /* ff777-pap3-mcp-profile.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "ff777-pap3-mcp-profile.cpp"; sourceTree = "<group>"; };
+		F6496CD2C93EDBD2EE84B695 /* ff767-pap3-mcp-profile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ff767-pap3-mcp-profile.h"; sourceTree = "<group>"; };
+		F60E9983B54D333484917318 /* ff767-pap3-mcp-profile.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "ff767-pap3-mcp-profile.cpp"; sourceTree = "<group>"; };
 		F6BBFF062ED741B900FE9D7F /* rotatemd11-pap3-mcp-profile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "rotatemd11-pap3-mcp-profile.h"; sourceTree = "<group>"; };
 		F6BBFF072ED741B900FE9D7F /* rotatemd11-pap3-mcp-profile.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "rotatemd11-pap3-mcp-profile.cpp"; sourceTree = "<group>"; };
 		F6C208682FC9702A006973EE /* rotatemd11-fcu-efis-profile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "rotatemd11-fcu-efis-profile.h"; sourceTree = "<group>"; };
@@ -1009,6 +1013,8 @@
 				B5800000000000000000C0FD /* b58-pap3-mcp-profile.cpp */,
 				F6BBFF042ED741B900FE9D7F /* ff777-pap3-mcp-profile.h */,
 				F6BBFF052ED741B900FE9D7F /* ff777-pap3-mcp-profile.cpp */,
+				F6496CD2C93EDBD2EE84B695 /* ff767-pap3-mcp-profile.h */,
+				F60E9983B54D333484917318 /* ff767-pap3-mcp-profile.cpp */,
 				F6BBFF062ED741B900FE9D7F /* rotatemd11-pap3-mcp-profile.h */,
 				F6BBFF072ED741B900FE9D7F /* rotatemd11-pap3-mcp-profile.cpp */,
 				F60ABABF2FBDA042001C91EF /* fps748-pap3-mcp-profile.h */,
@@ -1301,6 +1307,7 @@
 				F603CFA62FCECBA1005DF928 /* zibo-joystick-profile.cpp in Sources */,
 				F603CFA72FCECBA1005DF928 /* toliss-joystick-profile.cpp in Sources */,
 				F6BBFF0B2ED741B900FE9D7F /* ff777-pap3-mcp-profile.cpp in Sources */,
+				F66BFAE358660DF36E805A4C /* ff767-pap3-mcp-profile.cpp in Sources */,
 				F64BE3E72E1BF625003C1B73 /* usbdevice_win.cpp in Sources */,
 				F6E05E782FDDE23F00C1FA45 /* kingair350-fcu-efis-profile.cpp in Sources */,
 				F6E73EE32ED9CCA7000A8B6A /* product-ursa-minor-throttle.cpp in Sources */,
@@ -1447,6 +1454,7 @@
 				AF9A28E92FB71A19004849B1 /* pa28-ursa-minor-throttle-profile.cpp in Sources */,
 				F6BBFF082ED741B900FE9D7F /* rotatemd11-pap3-mcp-profile.cpp in Sources */,
 				F6BBFF092ED741B900FE9D7F /* ff777-pap3-mcp-profile.cpp in Sources */,
+				F65B07938A2ADEA3C48CBBD7 /* ff767-pap3-mcp-profile.cpp in Sources */,
 				F681E21E2FC9E5A30009D9FB /* stratosphere77w-fmc-profile.cpp in Sources */,
 				F6C6E0302E8D5DAA00558F46 /* product-pap3-mcp.cpp in Sources */,
 				F60ABAC12FBDA042001C91EF /* fps748-pap3-mcp-profile.cpp in Sources */,
