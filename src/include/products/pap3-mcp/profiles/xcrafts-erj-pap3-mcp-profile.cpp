@@ -74,12 +74,12 @@ const std::vector<std::string> &XCraftsErjPAP3MCPProfile::displayDatarefs() cons
 const std::unordered_map<uint16_t, PAP3MCPButtonDef> &XCraftsErjPAP3MCPProfile::buttonDefs() const {
     static const std::unordered_map<uint16_t, PAP3MCPButtonDef> buttons = {
         // Mode buttons
-        {2, {"VNAV", "XCrafts/ERJ/VNAV"}},
-        {3, {"FLCH", "XCrafts/ERJ/FLCH"}},
-        {4, {"HDG SEL", "sim/autopilot/heading_sync"}},
-        {5, {"LNAV", "XCrafts/ERJ/LNAV"}},
-        {6, {"VOR LOC", "XCrafts/ERJ/LNAV"}},
-        {7, {"APP", "XCrafts/ERJ/APPCH"}},
+        {1, {"SPEED", "XCrafts/ERJ/SPD"}},
+        {3, {"LVL CHG", "XCrafts/ERJ/FLC"}},
+        {4, {"HDG SEL", "sim/autopilot/heading"}},
+        {5, {"LNAV", "sim/autopilot/NAV"}},
+        {6, {"VOR LOC", "sim/autopilot/NAV"}},
+        {7, {"APP", "sim/autopilot/approach"}},
         {8, {"ALT HLD", "XCrafts/ERJ/alt_hold"}},
         {9, {"V/S", "XCrafts/ERJ/VS"}},
         {10, {"CMD A", "XCrafts/APYD_Toggle"}},
