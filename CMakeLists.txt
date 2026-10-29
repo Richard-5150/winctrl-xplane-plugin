@@ -1,3 +1,5 @@
+add_compile_definitions(XPLM200 XPLM210 XPLM300 XPLM301 XPLM303 XPLM400)
+
 # 3.16 is the real floor: the newest features used here are LIST(PREPEND) (3.15)
 # and TARGET_LINK_OPTIONS (3.13). The old 3.25.1 was simply the cmake version
 # that shipped with the previous Debian 12 build image, and it locks out the
